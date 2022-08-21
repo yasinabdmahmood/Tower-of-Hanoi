@@ -6,14 +6,7 @@ body{
     padding: 0%;
     margin: 0%;
 }
-.inputs{
-  padding: 25px;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  display: flex;
-  flex-direction: column;
-}
+
 .container{
   box-sizing: border-box;
   padding: 0%;
@@ -22,8 +15,20 @@ body{
     height: 90%;
     position: relative;
     background-color: aquamarine;
-    top: 8%;
+    bottom: 82%;
     left: 20%;
+}
+ span{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  z-index: 10;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+  display: none;
 }
 .disk1{
   box-sizing: border-box;
@@ -41,4 +46,17 @@ body{
   align-items: center;
   font-weight: 700;
   
+}
+
+.side-bar{
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 0%;
+  margin: 0%;
+  width: 20%;
+  height: 91%;
+  position :relative;
+  left:0%;
+  top:9%;
+  background-color: rgb(22, 151, 202);
 }

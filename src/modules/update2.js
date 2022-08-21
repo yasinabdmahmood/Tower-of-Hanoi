@@ -1,4 +1,5 @@
 import data from "./levelData.js"
+import didWin from "./didWin.js";
 
 const update2=(move)=>{
  data.currentDragableId=null;
@@ -26,7 +27,12 @@ const update2=(move)=>{
 
  data.topDisks=[data.stackA[Object.values(data.stackA).length-1],data.stackB[Object.values(data.stackB).length-1],data.stackC[Object.values(data.stackC).length-1]]
  
- 
+ if(didWin()){
+   document.querySelector('span').style.display="block";
+   const currentLevel=JSON.parse(localStorage.getItem('level'));
+   localStorage.setItem('level',JSON.stringify(currentLevel+1));
+   console.log("you won")
+ }
 
 
  
