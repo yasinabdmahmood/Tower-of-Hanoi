@@ -2,6 +2,7 @@ import data from "./levelData.js"
 import calc from "./calc.js";
 import myMove from "./myMove.js";
 import update2 from "./update2.js";
+import numberOfMoves from "./numberOfMoves.js";
 
 
 
@@ -39,6 +40,7 @@ const isLegal=(move)=>{
         
         myMove(data.currentDragableElement,...arr);
         update2(move);
+        numberOfMoves();
         
     }
     else{

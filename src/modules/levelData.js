@@ -5,7 +5,8 @@ const data={
     currentDragableId:null,
     currentDragableElement:null,
     lastStack:null,
-    topDisks:[1,undefined,undefined]
+    topDisks:[1,undefined,undefined],
+    move:0,
 }
 
 export default data;

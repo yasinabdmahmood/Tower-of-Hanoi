@@ -18,6 +18,7 @@ body{
     bottom: 82%;
     left: 20%;
 }
+
  span{
   position: absolute;
   top: 10%;
@@ -49,7 +50,12 @@ body{
 }
 
 .side-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   box-sizing: border-box;
+  
   border: 1px solid black;
   padding: 0%;
   margin: 0%;
@@ -59,4 +65,80 @@ body{
   left:0%;
   top:9%;
   background-color: rgb(22, 151, 202);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  row-gap: 1rem;
 }
+
+.levels{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+
+.side-bar .current-level{
+ border: 2px solid white;
+ font-size: 2rem;
+ font-weight: 700;
+}
+.side-bar .following-level{
+  opacity: 0.5;
+ }
+
+ .bottons{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+ }
+
+ .bottons *{
+  width: 100%;
+  
+  font-size: 1rem;
+ }
+
+ .move{
+  all: unset;
+ }
+
+ .warning{
+  
+  padding: 2rem;
+  row-gap: 1rem;
+ width: 50%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  background-color: white;
+  border: 2px solid red;
+  z-index: 10;
+ }
+ .warning span{
+  
+  all: unset;
+  font-size: 1.5rem;
+  color: red;
+ }
+ .confirm-reset{
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: red;
+  width: 10rem;
+ }
+
+ .confirm-reset:hover{
+  background-color: red;
+  color: white;
+ }
