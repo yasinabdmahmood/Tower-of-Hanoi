@@ -1,6 +1,5 @@
 body{
-    display: flex;
-    justify-content: center;
+   
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -16,25 +15,30 @@ body{
   flex-direction: column;
 }
 .container{
-    width: 600px;
-    height: 600px;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+    width: 80%;
+    height: 90%;
     position: relative;
     background-color: aquamarine;
+    top: 8%;
+    left: 20%;
 }
-#mydiv {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-  }
+.disk1{
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0%;
+  margin: 0%;
+  width: 25%;
+  height: 5%;
+  position: absolute;
+  z-index: 9;
+  background-color:pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
   
-  #mydivheader {
-    padding: 10px;
-    cursor: move;
-    z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
-  }
+}
