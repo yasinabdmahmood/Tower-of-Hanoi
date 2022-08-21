@@ -1,5 +1,8 @@
 import isDraggable from "./isDraggable.js";
 import myMove from "./myMove.js";
+import update1 from "./update1.js";
+import update2 from './update2.js';
+import moveCode from "./moveCode.js";
 
 function dragElement(elmnt,callback=calculateDetination) {
     
@@ -18,6 +21,7 @@ function dragElement(elmnt,callback=calculateDetination) {
       if(! isDraggable(elmnt)){
         return 
       }
+      update1(elmnt)
       e = e || window.event;
       e.preventDefault();
       // get the mouse cursor position at startup:
@@ -47,9 +51,10 @@ function dragElement(elmnt,callback=calculateDetination) {
     
     function closeDragElement(e) {
       // stop moving when mouse button is released:
+      moveCode(elmnt)
       
-      let lastPosition = callback(elmnt)
-      myMove(elmnt,...lastPosition)
+      
+      
       document.onmouseup = null;
       document.onmousemove = null;
       

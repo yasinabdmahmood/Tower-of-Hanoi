@@ -2,6 +2,7 @@ import dragElement from './modules/dragElement.js'
 import calc from './modules/calc.js';
 import myMove from './modules/myMove.js'
 import setUpLevelData from './modules/setUpLevelData.js'
+
 const level=5;
 setUpLevelData(level); 
 const disk=(id)=>`<div id="disk${id}" class="disk1">${id}</div>`;
@@ -16,7 +17,10 @@ const arr=Array.from(document.querySelectorAll('.disk1'))
 arr.forEach((el)=>{
   dragElement(el,calc);
  
+ 
 })
+
+
 
 
 

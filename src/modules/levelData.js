@@ -2,7 +2,8 @@ const data={
     stackA:[],
     stackB:[],
     stackC:[],
-    currentDragable:null,
+    currentDragableId:null,
+    currentDragableElement:null,
     lastStack:null,
     topDisks:[1,undefined,undefined]
 }

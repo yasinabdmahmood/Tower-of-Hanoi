@@ -7,6 +7,7 @@ function calc(elmnt,x=1,y=1){
    if(x==3){shift=width/10};
    const xx=x*width/4-elmnt.offsetWidth/2;
    const yy=(y-1)*elmnt.offsetHeight;
+   
    return [xx+shift,height- yy-elmnt.offsetHeight]
   }
 
