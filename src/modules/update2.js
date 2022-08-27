@@ -31,7 +31,7 @@ const update2=(move)=>{
    document.querySelector('span').style.display="block";
    const currentLevel=JSON.parse(localStorage.getItem('level'));
    localStorage.setItem('level',JSON.stringify(currentLevel+1));
-   console.log("you won")
+   document.querySelector('.win').style.display='flex';
  }
 
 

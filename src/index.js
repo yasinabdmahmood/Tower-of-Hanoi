@@ -19,6 +19,11 @@ document.querySelector('span').onclick=()=>{
   window.location.reload();
 }
 
+document.querySelector('.win button').onclick=()=>{
+  window.location.reload();
+}
+
+
 
 // const gameStart=(level)=>{
 // setUpLevelData(level); 
