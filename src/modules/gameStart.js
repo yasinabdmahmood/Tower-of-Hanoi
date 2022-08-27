@@ -12,6 +12,9 @@ let disks=``;
 for(let i=level;i>=1;--i){ 
  disks+=disk(i)
 }
+disks+=`<div class="base b1" ></div>
+<div class="base b2" ></div>
+<div class="base b3" ></div>`;
 
 document.querySelector('.container').innerHTML=disks;
 
