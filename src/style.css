@@ -50,19 +50,58 @@ body{
 .disk1{
   box-sizing: border-box;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 0%;
   margin: 0%;
   width: 25%;
-  height: 5%;
+  height: 8%;
+  padding: 20px;
   position: absolute;
   z-index: 9;
-  background-color:pink;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
   
+}
+
+
+#disk1{
+  background-color: #98FB98;
+}
+#disk2{
+  background-color: rgb(0,255,127);
+}
+#disk3{
+  background-color: #D8BFD8;
+}
+#disk4{
+  background-color: #FFFF00;
+}
+#disk5{
+  background-color: #FFD700;
+}
+#disk6{
+  background-color: #FFC0CB;
+}
+#disk7{
+  background-color: #FFA07A;
+}
+#disk8{
+  background-color: #00FF00;
+}
+#disk9{
+  background-color: #DD4433;
+}
+#disk10{
+  background-color: #ADD1FF;
+}
+#disk1:hover , #disk2:hover, #disk3:hover, #disk4:hover, #disk5:hover
+, #disk6:hover, #disk7:hover, #disk8:hover, #disk9:hover, #disk10:hover{
+  background-color:rgb(59, 29, 228);
+  color: white;
+  font-size: 2rem;
 }
 
 .side-bar{
@@ -161,6 +200,8 @@ body{
 
 .win{
   
+  background-color: white;
+  border-radius: 20px;
   position: absolute;
   z-index: 10;
   max-width: 50%;
@@ -169,9 +210,11 @@ body{
   display: none;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 1rem;
 }
 .win h1{
   text-align: center;
+  color: green;
   
 }
 .win button{
