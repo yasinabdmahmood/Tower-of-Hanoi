@@ -20,7 +20,7 @@ a conical shape. The objective of the puzzle is to move the entire stack to the 
 
 ## Live Demo 
 
-[Live Demo Link](https://yasinabdmahmood.github.io/Tower-of-Hanoi/src/index.htm)
+[Live Demo Link](https://yasinabdmahmood.github.io/Tower-of-Hanoi/src/)
 
 ![image](https://user-images.githubusercontent.com/97350474/188237234-cd9e7432-478d-4cce-9ad0-a195c126b07f.png)
 
