@@ -1,5 +1,3 @@
-const getId=(elem)=>{
-  return parseInt(elem.innerHTML)
-}
+const getId = (elem) => parseInt(elem.innerHTML, 10);
 
 export default getId;
