@@ -119,6 +119,7 @@ span {
   background-color: rgb(59, 29, 228);
   color: white;
   font-size: 2rem;
+  cursor: grab;
 }
 
 .side-bar {
